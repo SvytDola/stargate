@@ -1,3 +1,4 @@
+import "module-alias/register.js";
 import {logger} from "@config";
 
 async function main() {
