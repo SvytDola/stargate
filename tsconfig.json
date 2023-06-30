@@ -9,6 +9,12 @@
     "paths": {
       "@config": [
         "config/index"
+      ],
+      "@chain": [
+        "chain/index"
+      ],
+      "@provider": [
+        "provider/index"
       ]
     },
     "esModuleInterop": true,

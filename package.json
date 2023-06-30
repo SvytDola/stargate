@@ -4,8 +4,8 @@
   "description": "Stargate swap.",
   "main": "src/main/main.ts",
   "scripts": {
-    "dev": "yarn generate && yarn build && ts-node -r tsconfig-paths/register src/main/main.ts",
-    "start": "yarn generate && yarn build && node -r ./tsconfig-paths-bootstrap.js dist/main.js",
+    "dev": "yarn build && ts-node -r tsconfig-paths/register src/main/main.ts",
+    "start": "yarn build && node -r ./tsconfig-paths-bootstrap.js dist/main.js",
     "test": "jest",
     "build": "tsc",
     "generate": "typechain --target ethers-v6 --out-dir src/main/chain 'src/main/abi/*.abi.json'"
@@ -17,7 +17,8 @@
     "dotenv": "^16.3.1",
     "ethers": "^6.6.1",
     "tsconfig-paths": "^4.2.0",
-    "tslog": "^4.8.2"
+    "tslog": "^4.8.2",
+    "web3": "^4.0.2"
   },
   "devDependencies": {
     "@typechain/ethers-v6": "^0.4.0",
